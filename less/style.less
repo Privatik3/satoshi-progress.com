@@ -1,0 +1,103 @@
+// Theme colors
+@theme-primary:    #9AA4AE;
+@theme-second:     #2D3035;
+
+@theme-body-color: #000;
+@theme-alert-color: #3497DB;
+
+// Font Mixins
+.serif-font() {
+  font-family: 'Roboto', sans-serif;
+  color: @theme-body-color;
+}
+
+// Global Components
+body {
+	background-color: #596A7A;
+		text-align: center;
+    overflow-x: hidden;
+    .serif-font;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+    color: darken(@theme-primary, 10%);
+}
+
+a {
+    color: @theme-primary;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+// Custom css
+.col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7,
+.col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	border: 0px solid #000;
+	margin: 0;
+	padding: 0;
+}
+
+.custome-panel {
+	background-color: @theme-primary;
+	display: inline-block;
+	padding: 40px 0;
+	margin-bottom: 0;
+	border: 1px solid @theme-second;
+}
+
+.alert-custome {
+	background-color: @theme-second;
+	color: @theme-alert-color;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+// Service section style
+#services {
+	.row {
+		margin: 40px -15px;
+	}
+	.fa-custome {
+		color: @theme-primary;
+	}
+	.custome-panel {
+		width: 370px;
+		h3 {
+			margin: 0;
+		}
+	}
+}
+
+// Claim section style
+#claim {
+	.claim-col {
+		padding: 20px 10px;
+		width: 720px;
+	}
+	.banner {
+		width: 100%;
+	}
+}
+
+/*
+
+}
+	width: 95%;
+    border: none;
+    background-color: transparent;
+    box-shadow: unset;
+    border-bottom: 2px solid #2d3035;
+    border-radius: 0;
+    color: #2d3035b3;
+    text-align: center;
+    margin: auto;
+
+
+*/
