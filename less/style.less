@@ -19,16 +19,15 @@ body {
     .serif-font;
 }
 
-a,
 a:hover,
 a:focus,
 a:active,
 a.active {
-    outline: none;
-    color: darken(@theme-primary, 10%);
+    color: darken(@theme-alert-color, 10%) !important;
 }
 
 a {
+	outline: none;
     color: @theme-primary;
 }
 
@@ -39,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom css
 .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7,
 .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-	border: 0px solid #000;
+	border: 0 solid #000;
 	margin: 0;
 	padding: 0;
 }
@@ -57,6 +56,30 @@ h1, h2, h3, h4, h5, h6 {
 	color: @theme-alert-color;
 	font-size: 20px;
 	font-weight: 700;
+}
+
+// Navigation bar style
+.navbar-custom {
+	background-color: @theme-second;
+	border: none;
+	/*&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		color: #000000;
+	}*/
+	.navbar-brand {
+		background: @theme-second url(/img/logo.png) 0 2px no-repeat;
+		padding-left: 55px;
+		-webkit-background-size: 45px;
+		background-size: 45px;
+		color: @theme-alert-color;
+		font-size: 30px;
+	}
+	.navbar-nav li a{
+		color: @theme-alert-color;
+		font-size: 16px;
+	}
 }
 
 // Service section style
