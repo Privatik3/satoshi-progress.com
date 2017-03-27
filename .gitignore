@@ -1,2 +1,9 @@
 # Dependency directories
 node_modules
+
+# Idea
+.idea
+
+.git
+css
+vendor

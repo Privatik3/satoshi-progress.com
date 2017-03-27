@@ -1,0 +1,19 @@
+{
+  "name": "satoshi-progress.com",
+  "author": "Privatik3",
+  "version": "1.0.0",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/Privatik3/satoshi-progress.com#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Privatik3/satoshi-progress.com.git"
+  }, 
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "browser-sync": "^2.18.8",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0"
+  }
+}
