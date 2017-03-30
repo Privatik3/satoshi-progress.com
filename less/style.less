@@ -1,9 +1,10 @@
 // Theme colors
-@theme-primary:    #242f39;
-@theme-second:     #2D3035;
+@theme-primary: #333333;
+@theme-second: #222222;
 
-@theme-body-color: #000;
-@theme-alert-color: #3497DB;
+@theme-body-color: #f1c40f;
+@theme-alert-color: #f1c40f;
+@theme-border-color: #f1c40f;
 
 // Font Mixins
 .serif-font() {
@@ -13,7 +14,7 @@
 
 // Global Components
 body {
-	background-color: #1d252e;
+	background-color: #333222;
 		text-align: center;
     overflow-x: hidden;
     .serif-font;
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	padding: 15px 15px;
 	margin-bottom: 0;
-	border: 1px solid #a9cf54;
+	border: 1px solid @theme-border-color;
 }
 
 .alert-custome {
@@ -57,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 20px;
 	font-weight: 700;
 	margin-top: 20px;
+	border: 1px solid @theme-border-color;
 }
 
 // Navigation bar style
