@@ -57,14 +57,23 @@ h1, h2, h3, h4, h5, h6 {
 	color: @theme-alert-color;
 	font-size: 20px;
 	font-weight: 700;
-	margin-top: 20px;
+	margin: 0;
 	border: 1px solid @theme-border-color;
 }
 
 // Navigation bar style
 .navbar-custom {
-	background-color: @theme-second;
+	background-color: #222222;
 	border: none;
+	height: 65px;
+	border-bottom: 1px solid;
+	border-radius: unset;
+	margin: 0;
+	.container {
+		margin-top: 7px;
+		width: 1275px;
+		padding: 0;
+	}
 	.navbar-brand {
 		background: @theme-second url(/img/logo.png) 0 2px no-repeat;
 		padding-left: 55px;
@@ -72,18 +81,23 @@ h1, h2, h3, h4, h5, h6 {
 		background-size: 45px;
 		color: @theme-alert-color;
 		font-size: 30px;
+		margin-left: 10px !important;
 	}
-	.navbar-nav li a{
+	.navbar-nav li a {
 		color: @theme-alert-color;
 		font-size: 16px;
 		font-weight: 700;
+		border-left: 1px solid;
+	}
+	.sign-out {
+		border-right: 1px solid;
 	}
 }
 
 // Service section style
 #services {
 	.row {
-		margin: 30px -15px; //было 40px -15px стало 30px -15px
+		margin: 45px -15px;
 	}
 	.fa-custome {
 		color: @theme-primary;
@@ -98,33 +112,44 @@ h1, h2, h3, h4, h5, h6 {
 
 // Claim section style
 #claim {
+	.claim-banners {
+		margin: 25px 0;
+	}
 	.claim-col {
-		padding: 11.4px 10px;
 		width: 720px;
+		margin-bottom: 30px;
 	}
 	.banner {
 		width: 100%;
 	}
-	.row {
-		margin: 30px -15px; //было 40px -15px стало 30px -15px
-	}
     .border-banner{
         border: 1px solid @theme-border-color;
-  }
+  	}
+	.reff {
+		margin: 20px 40px 10px;
+	}
 }
 
-/*
-
+#address {
+	width: 97%;
+	border: none;
+	background-color: transparent;
+	box-shadow: unset;
+	border-bottom: 2px solid #f1c40f;
+	border-radius: 0;
+	color: #f1c40f;
+	text-align: center;
+	margin: 20px auto;
+	opacity: 0.8;
 }
-	width: 95%;
-    border: none;
-    background-color: transparent;
-    box-shadow: unset;
-    border-bottom: 2px solid #2d3035;
-    border-radius: 0;
-    color: #2d3035b3;
-    text-align: center;
-    margin: auto;
 
-
-*/
+// Footer section style
+footer {
+	margin-top: 30px;
+	border-top: 1px solid;
+	height: 40px;
+	.container {
+		width: 1275px;
+		padding-top: 10px;
+	}
+}
